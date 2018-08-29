@@ -134,25 +134,25 @@ export default class Home extends Component{
   </View>
     <View style={styles.wholeConatainer}>
         <View style={styles.holeView}>
-          <Hole holeNumber={1} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
-          <Hole holeNumber={2} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={1} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null }}/>
+          <Hole holeNumber={2} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null }}/>
         </View>
         <View style={styles.holeView} justifyContent= 'center'alignItems= 'center'>
-          <Hole holeNumber={3} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={3} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null }}/>
        </View>
        <View style={styles.holeView}>
-          <Hole holeNumber={4} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
-          <Hole holeNumber={5} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={4} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
+          <Hole holeNumber={5} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
        </View>
        <View style={styles.holeView} justifyContent= 'center'alignItems= 'center'>
-          <Hole holeNumber={6} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={6} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
        </View>
        <View style={styles.holeView}>
-          <Hole holeNumber={7} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
-          <Hole holeNumber={8} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={7} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
+          <Hole holeNumber={8} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
        </View>
        <View style={styles.holeView} justifyContent= 'center'alignItems= 'center'>
-          <Hole holeNumber={9} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this.props.changeNameInput(this.props.change+n),this.props.decInput(false) }}/>
+          <Hole holeNumber={9} bounceValue={this.state.bounceValue} check={this.props.check} _toggleSubview={()=>this._toggleSubview()} changeNameInput={(n)=>{this._toggleSubview(),this.props.decInput(false),this.props.dec?this.props.changeNameInput(this.props.change+n):null}}/>
        </View>
     </View>
 
